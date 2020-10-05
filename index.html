@@ -7,46 +7,56 @@
 	<link rel="reset" media="screen" href="css/reset.css">
 	<link rel="stylesheet" media="screen" href="css/style.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+	<!-- JS File -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
 </head>
 <body>
-	<!-- Title Section -->
+	<!-- Title Screen -->
 	<div class="title">
 		<h1>Beta Tester Program Test Sign Up Page</h1>
-		<p>In this page, you will required to fill the data before you can register your name for the test</p>
-		<p>Created By: <b>Enrique A. Budiono</b></p>
-		<hr>
+		<p>In This page, you will required to fill the data before you can register to the program</p>
+		<p>Created By: <strong>Enrique A. Budiono</strong></p>
 	</div>
 	
-	<!-- User Registration -->
+	<hr>
+	
+	<!-- Main Program -->
 	<div class="container">
-		<label><b>Name</b></label>
-		<input type="text" placeholder="Your Full Name Here" name="name" required>
-		<label><b>Age</b></label>
-		<input type="number" placeholder="Your age" name="age" required>
-		<label><b>E-Mail</b></label>
-		<input type="text" placeholder="example@example.com" name="email" required>
-		<label><b>Password</b></label>
-		<input type="password" placeholder="Enter your Password here" name="pass" required>
-		<label><b>Repeat Password</b></label>
-		<input type="password" placeholder="Re-Enter your password here" name="repeat" required>
-		<label><b>Phone Number</b></label>
-		<input type="number" placeholder="(xxx)xxx-xxxx" name="phone" required>
-		<label><b>Address</b></label>
-		<input type="text" placeholder="City,State (Chicago, IL)" name="location" required>
-		<label><b>Date of Birth (DoB)</b></label>
-		<input type="date">
-		<label>Background</label>
-		<textarea rows="4" cols="50" name="Comments">Enter your Background here</textarea>
-		<hr>
-		<label>
-			<input type="checkbox" name="agree">Agreeing for Accepting <a href="#"><strong>Terms & Regulations</strong></a>
-		</label>
-	</div>
-	
-	<!-- Register Or Not Section -->
-	<div>
-		<button type="button" class="cancel">CANCEL</button>
-		<button type="submit" class="submit">SIGN UP / REGISTER</button>
+		<form class="form" method="post" action="#">
+			<label><b>Name</b></label>
+			<input type="text" name="dname" id="name" placeholder="Enter your name here" required>
+			
+			<label><b>Age</b></label>
+			<input type="number" name="dage" id="age" placeholder="Your Age" required>
+			
+			<label><b>E-Mail</b></label>
+			<input type="email" name="demail" id="email" placeholder="example@example.com" required>
+			
+			<label><b>Password</b></label>
+			<input type="password" name="password" id="password" placeholder="Your Password here" required>
+			
+			<label><b>Re-Password</b></label>
+			<input type="password" name="cpassword" id="cpassword" placeholder="Your Password here" required>
+			
+			<label><b>Address</b></label>
+			<input type="text" name="address" id="address" placeholder="City, State" required>
+			
+			<label><b>Date of Birth (DoB)</b></label>
+			<input type="date" name="dob" id="dob" required>
+			
+			<hr>
+			
+			<label>
+				<input type="checkbox" name="agree">By Checking the box you accpet <a href="#"><strong>Terms & Regulations</strong></a>
+			</label>
+			
+			<!-- Accpet or Not -->
+			<div>
+				<button type="button" class="cancel">CANCEL</button>
+				<button type="submit" class="submit" name="register" id="register" value="Register">SUBMIT</button>
+			</div>
+		</form>
 	</div>
 </body>
 </html>
