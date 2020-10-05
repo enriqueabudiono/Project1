@@ -5,7 +5,7 @@ body {
 
 .title {
 	font-size: 15px;
-	padding: 5px;
+	padding: 10px;
 }
 
 input[type=text], input[type=password], input[type=date], input[type=number] {
@@ -23,14 +23,24 @@ input[type=text]:focus, input[type=password]:focus, input[type=date]:focus, inpu
 	outline: none;
 }
 
+textarea {
+	width: 100%;
+	padding: 15px;
+	margin: 5px 0 22px 0;
+	display: inline-block;
+	border: none;
+	background: #BDAEAE;
+	cursor: pointer;
+}
+
 hr {
-	border: 1px solid #FC0000;
+	border: 1px solid #FFFFFF;
 	margin-bottom: 25px;
 }
 
 button {
 	background-color: #81B71A;
-	color: white;
+	color: black;
 	padding: 14px 20px;
 	margin: 8px 0;
 	border: none;
