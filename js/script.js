@@ -1,4 +1,4 @@
-(document).ready(function() {
+$(document).ready(function() {
 	$("#register").click(function() {
 		var mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 		var name = $("#name").val();
