@@ -12,50 +12,47 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="js/script.js"></script>
 </head>
-<body>
-	<!-- Title Screen -->
+<header>
 	<div class="title">
 		<h1>Beta Tester Program Test Sign Up Page</h1>
 		<p>In This page, you will required to fill the data before you can register to the program</p>
 		<p>Created By: <strong>Enrique A. Budiono</strong></p>
 	</div>
-	
-	<hr>
-	
+</header>
+<body>
 	<!-- Main Program -->
-	<div class="container">
-		<form class="form" method="post" action="#">
-			<label><b>Name</b></label>
-			<input type="text" name="dname" id="name" placeholder="Enter your name here" required>
+	<div class="container rule">
+		<form class="form" method="post" action="#" autocomplete="on">
+			<label><strong>Name</strong></label>
+			<input type="text" name="dname" id="name" placeholder="Your Name Here" required>
 			
-			<label><b>Age</b></label>
+			<label><strong>Age</strong></label>
 			<input type="number" name="dage" id="age" placeholder="Your Age" required>
 			
-			<label><b>E-Mail</b></label>
+			<label><strong>E-Mail</strong></label>
 			<input type="email" name="demail" id="email" placeholder="example@example.com" required>
 			
-			<label><b>Password</b></label>
+			<label><strong>Password</strong></label>
 			<input type="password" name="password" id="password" placeholder="Your Password here" required>
 			
-			<label><b>Re-Password</b></label>
+			<label><strong>Re-Password</strong></label>
 			<input type="password" name="cpassword" id="cpassword" placeholder="Your Password here" required>
 			
-			<label><b>Address</b></label>
+			<label><strong>Address</strong></label>
 			<input type="text" name="address" id="address" placeholder="City, State" required>
 			
-			<label><b>Date of Birth (DoB)</b></label>
+			<label><strong>Date of Birth (DoB)</strong></label>
 			<input type="date" name="dob" id="dob" required>
 			
-			<hr>
 			
 			<label>
-				<input type="checkbox" name="agree">By Checking the box you accpet <a href="#"><strong>Terms & Regulations</strong></a>
+				<input type="checkbox" name="agree">By Checking the box you accept <a href="#"><strong>Terms & Regulations</strong></a>
 			</label>
 			
-			<!-- Accpet or Not -->
-			<div>
+			<!-- Accept or Not -->
+			<div class="rule">
 				<button type="button" class="cancel">CANCEL</button>
-				<button type="submit" class="submit" name="register" id="register" value="Register">SUBMIT</button>
+				<button type="submit" class="submit" name="register" id="register" value="Register">REGISTER</button>
 			</div>
 		</form>
 	</div>
