@@ -1,11 +1,11 @@
+header {
+	font-family: 'Montserrat';
+	background-color: #BDAEAE;
+	padding: 10px;
+}
 body {
 	font-family: 'Montserrat';
 	background-color: #BDAEAE;
-}
-
-.title {
-	font-size: 15px;
-	padding: 10px;
 }
 
 input[type=text], input[type=password], input[type=date], input[type=number], input[type=email], input[type=tel] {
@@ -23,6 +23,11 @@ input[type=text]:focus, input[type=password]:focus, input[type=date]:focus, inpu
 	outline: none;
 }
 
+.title {
+	font-size: 15px;
+	padding: 10px;
+}
+
 textarea {
 	width: 100%;
 	padding: 15px;
@@ -31,11 +36,6 @@ textarea {
 	border: none;
 	background: #BDAEAE;
 	cursor: pointer;
-}
-
-hr {
-	border: 1px solid #FFFFFF;
-	margin-bottom: 25px;
 }
 
 button {
@@ -80,9 +80,19 @@ ul {
 	margin: 0;
 }
 
+.rule {
+	border-top: 2px solid white;
+}
+
 /* For Smaller Tablet / Phone */
 @media screen and (max-width: 300px) {
 	.cancel, .submit {
 		width: 100%;
+	}
+}
+
+@media screen and (min-width: 100px) {
+	.cancel,.submit {
+		width: 50%;
 	}
 }
